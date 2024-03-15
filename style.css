@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-img {
+  max-width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+body {
+  background: #F2EAE2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.main-container {
+  background: #FFF;
+  max-width: 343px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  font-weight: 400;
+  color: #6C7289;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.content-container {
+  padding: 1.5rem;
+}
+
+.content-container p {
+  font-size: 0.875rem;
+  color: #6C7289;
+}
+
+.main-paragraph {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.1875rem;
+  margin-bottom: 1.25rem;
+
+}
+
+.price .main-price {
+  font-family: "Fraunces", serif;
+  color: #3D8168;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price .old-price {
+  text-decoration: line-through;
+}
+
+.button {
+  background: #3D8168;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 0.875rem 0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button img {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 700px) {
+  
+
+  .main-container {
+    max-width: 600px;
+    display: flex;
+  }
+
+  .main-img {
+    border-top-right-radius: initial;
+    border-bottom-left-radius: 10px;
+  }
+
+  .content-container {
+    padding: 2rem;
+    max-width: 18.75rem;
+  }
+
+  .main-img {
+    min-height: 100%;
+  }
+
+  .title {
+    margin: 1.25rem 0 1.5rem 0;
+  }
+
+  .main-paragraph {
+    margin-bottom: 1.8125rem;
+  }
+
+  .price {
+    margin-bottom: 1.875rem;
+  }
+
+  .button:hover {
+    background: #1A4032;
+    cursor: pointer;
+  }
+
+
+  
+}
+
+
